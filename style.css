@@ -15,7 +15,7 @@
     padding:40px;
     margin:15px;
 }
-body{
+.body{
     background-image: url("iitkgp2.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -28,4 +28,35 @@ body{
     width:280px;
     padding: 5px 10px 5px 10px;
 }
+fieldset{
+    padding:20px;
+    margin:10px;
+    animation-name:about;
+    animation-duration:4s;
+    background-color:thistle;
+    border:2px solid red;
+}
 
+p{
+    padding:20px;
+    margin:10px;
+}
+legend{
+    color:white;
+}
+@keyframes about {
+    from{
+        background-color:black;
+    }
+    to{
+     background-color:thistle;
+    }
+    
+}
+.about{
+    background-image: url("about.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
