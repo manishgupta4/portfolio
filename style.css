@@ -68,23 +68,60 @@ legend{
     justify-content: center;
     align-items:center;
 }
-.contact{
+
+
+@media(max-width:700px)  {
+     .body{
+        background-image:url("kgp.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        background-attachment: fixed;
+        width: auto;
+     }
+}
+@media(max-width:700px){
+    .contact{
+        background-color:gold;
+    }
+    .row4{
+        animation-name: contact;
+        animation-duration: 8s;
+        margin:4px;
+        padding: 5px;
+        border: 4px solid red ;
+    }
+    .container3{
+        flex-direction:column-reverse;
+    }
+}
+@keyframes contact{
+    from{
+        color:aqua;
+    }
+    to{
+        color:darkred;
+    }
+}
+
+@media(min-width:700px){
+    .row4{
+        display:none;
+    }
+    .contact{
     background-image: url("contact.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
+    }
 }
-
-@media(max-width:700px)  {
-     .body{
-        background-image:url("ilu.png");
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center center;
-        background-attachment: fixed;
-     }
-    
-    
+.container4{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
 }
-
+.project{
+    background-color:tan;
+}
